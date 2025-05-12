@@ -2,14 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Leaderboard</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        thead {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+        th {
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+            border-bottom: 2px solid #34495e;
+        }
+        tbody tr {
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+        tbody tr:hover {
+            background-color: #dfe6e9;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        td.rank {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        td.score {
+            color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Score</th>
+                <th>Matches Played</th>
+                <th>Win Rate (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rank">1</td>
+                <td>ShadowStriker</td>
+                <td class="score">12500</td>
+                <td>45</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td class="rank">2</td>
+                <td>BlazeRunner</td>
+                <td class="score">11200</td>
+                <td>50</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td class="rank">3</td>
+                <td>ThunderBolt</td>
+                <td class="score">9800</td>
+                <td>38</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td class="rank">4</td>
+                <td>StarCrusader</td>
+                <td class="score">8700</td>
+                <td>42</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td class="rank">5</td>
+                <td>MysticViper</td>
+                <td class="score">7500</td>
+                <td>35</td>
+                <td>65</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
